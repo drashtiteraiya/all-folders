@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flex responsive-2</title>
+	<style type="text/css">
+		.main{
+			height: 300px;
+			width: 100%;
+			/*border: 1px solid black;*/
+			display: flex;
+			justify-content: space-between;
+		}
+		.a{
+			height: 300px;
+			width: 31%;
+			border: 1px solid black;
+		}
+		.a img{
+			height: 100%;
+			width: 100%;
+		}
+		@media(max-width: 480px){
+			.main{
+				flex-direction: column;
+			}
+			.a{
+				width: 100%;
+			}
+		}
+		@media(max-width: 576px){
+			.main{
+				flex-direction: column;
+
+			}
+			.a{
+				width: 100%;
+			}
+		}
+		@media(max-width: 768px){
+			.main{
+				flex-direction: column;
+				align-items: center;
+			}
+			.a{
+				width: 95%;
+			}
+		}
+		@media(max-width: 992px){
+			.main{
+				flex-direction: column;
+				align-items: center;
+			}
+			.a{
+				width: 90%;
+			}
+		}
+		@media(max-width: 1200px){
+			.main{
+				flex-direction: column;
+				align-items: center;
+			}
+			.a{
+				width: 90%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="a">
+			<img src="beach.jpg">
+		</div>
+		<div class="a">
+			<img src="beach.jpg">
+		</div>
+		<div class="a">
+			<img src="beach.jpg">
+		</div>
+	</div>
+
+</body>
+</html>
