@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<style type="text/css">
+		header{
+			height: 100px;
+			width: 100%;
+			/*border: 1px solid black;*/
+			background: black;
+			display: flex;
+			position: relative;
+		}
+		.logo{
+			height: inherit;
+			width: 35%;
+			/*border: 1px solid white;*/
+		}
+		header h2{
+			color: steelblue;
+			font-size: 40px;
+			position: absolute;
+			left: 10%;
+			top: -12px;
+		}
+		header h3{
+			color: gray;
+			position: absolute;
+			left: 15%;
+			top: -18px;
+			font-size: 40px;
+		}
+		header h4{
+			color: whitesmoke;
+			font-size: -30px;
+			position: absolute;
+			left: 10%;
+			top: 55px;
+		}
+		.name{
+			height: 495px;
+			width: 35%;
+			/*border: 4px solid red;*/
+			position: absolute;
+			top: 200px;
+			left: 80px;
+		}
+		.name h1{
+			height: 68px;
+			width: 100%;
+			/*border: 3px solid red;*/
+			font-size: 70px;
+			position: absolute;
+			top: 4%;
+		}
+		.name h2{
+			height: 54px;
+			width: 85%;
+			padding-top: 0px;
+			/*border: 2px solid red;*/
+			position: absolute;
+			left: 80px;
+			font-size: 55px;
+			top: 18%;
+			text-align: center;
+			font-family: monospace ;
+		}
+		.name p{ 
+			height: 140px;
+			width: 97%;
+			left: 2%;
+			/*border: 2px solid red;*/
+			/*color: whitesmoke; */
+			position: absolute; 
+			font-size: 23px; 
+			top: 70%;
+			padding: 10px;
+			 }
+		.btnmain{
+			 /*border: 3px solid red; */
+			 height: 43px; 
+			 width: 20%;
+			 background: black;
+		 	 display: flex; 
+		 	 position: absolute; 
+			 top: 96%; 
+			 left: 95px;
+		}
+		.btnmain .btn1{
+			/*border: 2px solid white;*/
+			width: 86.5%;
+			height: 43px;
+			box-sizing: border-box;
+			text-align: center;
+			padding-top: 5px;
+		}
+		.btnmain .btn1 a{
+			text-decoration: none;
+			color: whitesmoke;
+			padding: 10px;
+			font-size: 19px;
+
+		}
+		.btnmain .btn2{
+			height: 43px;
+			width: 13.5%;
+			/*border: 1px solid white;*/
+			text-align: center;
+			padding-top: 5px;
+		}
+		.btnmain .btn2 a{
+			 text-decoration: none; 
+			 color: whitesmoke; 
+			 padding: 10px;
+			 font-size: 24px; 
+		} 
+		/*<!-- MEDIA-QUERY -->*/
+		@media(max-width: 1400px){
+			header .logo h2{
+				margin-top: -2px;
+			}
+			header .logo h3{
+				margin-top: -2px;
+				margin-left: 5px;
+			}
+			header .logo h4{
+				margin-top: -1px;
+			}
+			.btnmain{
+				margin-top: -20%;
+				width: 26%;
+			}
+			.btnmain .btn1{
+				margin-top: 5px;
+			}
+			.btnmain .btn1 a{
+				font-size: 20px;
+			}
+			.btnmain .btn2{
+				margin-top: 2px;
+			}
+			.btnmain .btn2 a{
+				font-size: 28px;
+			}
+		}
+			@media(max-width: 1200px){
+				header .logo h3{
+					margin-left: 15px;
+				}
+				header .nav a{
+					padding: 10px;
+					font-size: 20px;
+				}
+				.btnmain{
+					margin-top: -10%;
+				}
+			}
+			@media(max-width: 1080px){
+				.btnmain{
+					margin-top: -5%;
+				}
+				.btnmain .btn1 a{
+					font-size: 18px;
+				}
+			}
+			@media(max-width: 992px){
+				header .logo h2{
+					margin-left: -60px;
+				}
+				header .logo h3{
+					margin-left: -29px;
+				}
+				header .logo h4{
+					margin-left: -58px;
+				}
+				.name p{
+					font-size: 20px;
+				}
+				.btnmain{
+					margin-top: -11%;
+				}
+				.btnmain .btn1 a{
+					font-size: 15px;
+				}
+			}
+			@media(max-width: 768px){
+				header .logo h4{
+					font-size: 16px;
+				}
+				.btnmain{
+					margin-top: 12%;
+					width: 38%;
+				}
+			}
+			@media(max-width: 576px){
+				header .logo h2{
+					font-size: 28px;
+					margin-top: 8px;
+					margin-left: -9%;
+				}
+				header .logo h3{
+					font-size: 28px;
+					margin-top: 8px;
+				}
+				header .logo h4{
+					font-size: 13px;
+					margin-top: -2px;
+				}
+				.name p{
+					font-size: 17px;
+				}
+				.btnmain{
+					margin-top: 16%;
+					width: 40%;
+				}
+				.btnmain .btn1 a{
+					font-size: 15px;
+				}
+			}
+			@media(max-width: 480px){
+				header .logo h2{
+					font-size: 22px;
+				}
+				header .logo h3{
+					font-size: 22px;
+					margin-left: -20px;
+				}
+				header .logo h4{
+					font-size: 11px;
+					margin-top: -10px;
+				}
+				.name h1{
+					margin-left: -35%;
+				}
+				.name h2{
+					margin-left: -30%;
+				}
+				.name p{
+					font-size: 14px;
+				}
+				.btnmain{
+					width: 50%;
+					margin-top: 20%;
+				}
+			}
+	</style>
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2>AIR</h2>
+			<h3>LINES</h3>
+			<h4>INTERNATIONAL TRAVEL</h4>
+		</div>
+	</header>
+	<div class="photos">
+		<img src="airplane1.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane2.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane3.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane4.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane5.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane6.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane7.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane8.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane9.jpg" height="640px" width="100%" class="d1">
+		<img src="airplane10.jpg" height="640px" width="100%" class="d1">
+	</div>
+	<div class="name">
+		<h1>COMFORT</h1>
+		<h2>Guaranteed</h2>
+		<p>Lorem ipsum dolor sitamet,consectetur adipisicing consectetur adipisicing elit, sed do eiusmod
+		tempor olore magna aliqua.elit,sed do eiusmod labore et dolore magna aliqua.</p>
+	</div>
+	<div class="btnmain">
+		<div class="btn1">
+			<a href="">ORDER TICKETS ONLINE</a>
+		</div>
+			<div class="btn2">
+				<b><a href="">></a></b>
+			</div>
+	</div>
+</body>
+<script type="text/javascript">
+	ar=0;
+	function slider(){
+		var img=document.getElementsByClassName('d1')
+		for (var i=0;i<=9;i++){
+			img[i].style.display="none";
+		}
+		if (ar==img.length) {
+			ar=0;
+		}
+		img[ar].style.display="block";
+		ar++;
+		setTimeout(slider,3000)
+	}
+	slider();
+</script>
+</html>

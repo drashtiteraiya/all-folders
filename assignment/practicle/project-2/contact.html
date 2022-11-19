@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<style type="text/css">
+		*{
+			margin-top: 0px;
+			padding: 0px;
+		}
+		body{
+			background: url(contactbg.jpg);
+			background-size: cover;
+		}
+		h1{
+			text-align: center;
+			font-size: 65px;
+			height: 130px;
+			width: 100%;
+			text-align: center;
+			padding-top: 30px;
+			color: whitesmoke;
+		}
+		section{
+			height: 100vh;
+			width: 80%;
+			border: 1px solid black;
+			display: flex;
+			margin-left: 10%;
+		}
+		aside{
+			height: 100vh;
+			width: 45%;
+			border: 1px solid black;
+			background: deepskyblue;
+			color: white;
+		}
+		aside h2{
+			font-size: 45px;
+			text-align: center;
+			margin-top: 50%;
+			text-decoration: underline;
+			color: whitesmoke;
+
+		}
+		aside p{
+			padding: 20px;
+			font-size: 20px;
+			text-align: center;
+			margin-top: 5%;
+		}
+		article{
+			height: 100vh;
+			width: 65%;
+			border: 1px solid black;
+		}
+		article h3{
+			font-size: 45px;
+			text-align: center;
+			color: whitesmoke;
+		}
+		form{
+			height: 80vh;
+			width: 70%;
+			border: 1px solid black;
+			margin-left: 15%;
+		}
+		#f1{
+			height: 40px;
+			width: 95%;
+			background: lightgray;
+		}
+		#f2{
+			height: 40px;
+			width: 95%;
+			background: lightgray;
+		}
+		#f3{
+			height: 40px;
+			width: 95%;
+			background: lightgray;
+		}
+		#f4{
+			height: 40px;
+			width: 95%;
+			background: lightgray;
+		}
+		#f5{
+			height: 170px;
+			width: 95%;
+			background: lightgray;
+			overflow: hidden;
+			resize: both;
+		}
+		#f6{
+			height: 50px;
+			width: 35%;
+			margin-left: 32%;
+			border-radius: 35%;
+			font-size: 25px;
+			background: deepskyblue;
+		}
+		#f6{
+			height: 50px;
+			width: 35%;
+		}
+		footer{
+			height: 100px;
+			width: 100%;
+			/*border: 1px solid red;*/
+			background: black;
+			color: whitesmoke;
+			display: flex;
+			margin-top: 20px;
+		}
+		.f1{
+			margin-top: 40px;
+			margin-left: 10%;
+		}
+		.f1 p a{
+			color: whitesmoke;
+		}
+		.f2{
+			margin-top: 40px;
+			margin-left: 40%;
+		}
+		.f2 p a{
+			color: whitesmoke;
+		}
+		/*<!-- MEDIA QUERY -->*/
+		@media(max-width: 768px){
+			form{
+				height: 540px;
+			}
+		#f6{
+			font-size: 10px;
+			width: 22%;
+			height: 22px;
+		}	
+		}
+		@media(max-width: 576px){
+			section{
+				width: 100%;
+				margin-left: 0px;
+			}
+		}
+		@media(max-width: 440px){
+			footer{
+				font-size: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>CONTACT FORM</h1>
+	<section>
+		<aside>
+			<h2>Let's Chat</h2>
+			<p>Whether you have a question, want to start a project or simply want to connect.<br><br>
+			Feel free to send me a message in the contact form.</p>
+		</aside>
+		<article>
+			<h3>Contact</h3>
+			<form>
+				<label style="font-size: 25px; color: whitesmoke;""color: whitesmoke;">*Required</label><br><br><br>
+				<input type="text" name="" placeholder="Name *" id="f1"><br><br>
+				<input type="text" name="" placeholder="Email *" id="f2"><br><br>
+				<input type="text" name="" placeholder="Company" id="f3"><br><br>
+				<input type="Number" name="" placeholder="Phone" id="f4"><br><br>
+				<input type="Text" name="" placeholder="message"id="f5"><br><br>
+				<input type="submit" name="" placeholder="Submit" id="f6">
+			</form>
+		</article>
+	</section>
+	<footer>
+		<div class="f1">
+			<p>Copyright©2010 <a href="">Domain Name </a>- All Rights Reserved</p>
+		</div>
+		<div class="f2">
+			<p><a href="">Free CSS Templates</a> by <a href="">TemplateMonster</a></p>
+		</div>
+	</footer>
+</body>
+</html>

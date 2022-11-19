@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>safety</title>
+	<style type="text/css">
+		*{
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
+			padding-top: 0px;
+			box-sizing: border-box;
+		}		
+		header{
+			height: 200px;
+			width: 100%;
+			background-image: linear-gradient(rgba(4, 9, 20, 0.5),rgba(4, 9, 20, 0.5));
+		}
+		marquee h1{
+			font-size: 75px;
+		}
+		 marquee h3{
+		 	margin-top: -10px;
+		 	font-size: 48px;
+		}
+		.main1{
+			height: 380px;
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 2%;	
+		}
+		 .img1{
+			height: 380px;
+			width: 48%;
+			border: 1px solid black;
+			float: left;
+		}
+		.img1 img{
+			height: 100%;
+			width: 100%;
+		}
+		.p1{
+			height: 380px;
+			width: 50%;
+			border: 1px solid black;
+			float: right;
+			padding: 10px;
+		}
+		.p1 h4{
+			font-size: 30px;
+		}
+		.p1 p{
+			font-size: 18px;
+		}
+		.main2{
+			height: 380px;
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 6%;	
+		}
+		 .img2{
+			height: 380px;
+			width: 48%;
+			border: 1px solid black;
+			float: right;
+		}
+		.img2 img{
+			height: 100%;
+			width: 100%;
+		}
+		.p2{
+			height: 380px;
+			width: 50%;
+			border: 1px solid black;
+			float: left;
+			padding: 10px;
+		}
+		.p2 h4{
+			font-size: 30px;
+		}
+		.p2 p{
+			font-size: 18px;
+		}
+		.main3{
+			height: 380px;
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 6%;	
+		}
+		 .img3{
+			height: 380px;
+			width: 48%;
+			border: 1px solid black;
+			float: left;
+		}
+		.img3 img{
+			height: 100%;
+			width: 100%;
+		}
+		.p3{
+			height: 380px;
+			width: 50%;
+			border: 1px solid black;
+			float: right;
+			padding: 10px;
+		}
+		.p3 h4{
+			font-size: 30px;
+		}
+		.p3 p{
+			font-size: 18px;
+		}
+		.main4{
+			height: 380px;
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 6%;	
+		}
+		 .img4{
+			height: 380px;
+			width: 48%;
+			border: 1px solid black;
+			float: right;
+		}
+		.img4 img{
+			height: 100%;
+			width: 100%;
+		}
+		.p4{
+			height: 380px;
+			width: 50%;
+			border: 1px solid black;
+			float: left;
+			padding: 10px;
+		}
+		.p4 h4{
+			font-size: 30px;
+			/*text-align: center;*/
+		}
+		.p4 p{
+			font-size: 18px;
+		}
+		.main5{
+			height: 380px;
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 6%;	
+		}
+		 .img5{
+			height: 380px;
+			width: 48%;
+			border: 1px solid black;
+			float: left;
+		}
+		.img5 img{
+			height: 100%;
+			width: 100%;
+		}
+		.p5{
+			height: 380px;
+			width: 50%;
+			border: 1px solid black;
+			float: right;
+			padding: 10px;
+		}
+		.p5 h4{
+			font-size: 30px;
+			/*text-align: center;*/
+		}
+		.p5 p{
+			font-size: 18px;
+		}
+		.main6{
+			height: 380px;
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 6%;	
+		}
+		 .img6{
+			height: 380px;
+			width: 48%;
+			border: 1px solid black;
+			float: right;
+		}
+		.img6 img{
+			height: 100%;
+			width: 100%;
+		}
+		.p6{
+			height: 380px;
+			width: 50%;
+			border: 1px solid black;
+			float: left;
+			padding: 10px;
+		}
+		.p6 h4{
+			font-size: 30px;
+			/*text-align: center;*/
+		}
+		.p6 p{
+			font-size: 18px;
+		}
+		footer{
+			height: 100px;
+			width: 100%;
+			/*border: 1px solid red;*/
+			background: black;
+			color: whitesmoke;
+			display: flex;
+		}
+		.f1{
+			margin-top: 40px;
+			margin-left: 10%;
+		}
+		.f1 p a{
+			color: whitesmoke;
+		}
+		.f2{
+			margin-top: 40px;
+			margin-left: 40%;
+		}
+		.f2 p a{
+			color: whitesmoke;
+		}
+		/*<!-- MEDIA-QUERY -->*/
+		@media(max-width: 1200px){
+			.main1 .p1 p{
+				font-size: 15px;
+			}
+			.main2 .p2 p{
+				font-size: 15px;
+			}
+			.main3 .p3 p{
+				font-size: 15px;
+			}
+			.main4 .p4 p{
+				font-size: 15px;
+			}
+			.main5 .p5 p{
+				font-size: 15px;
+			}
+			.main6 .p6 p{
+				font-size: 15px;
+			}
+		}
+		@media(max-width: 768px){
+			.main1 .p1 p{
+				font-size: 13px;
+			}
+			.main2 .p2 p{
+				font-size: 13px;
+			}
+			.main3 .p3 p{
+				font-size: 13px;
+			}
+			.main4 .p4 p{
+				font-size: 13px;
+			}
+			.main5 .p5 p{
+				font-size: 13px;
+				margin-top: -28px;
+			}
+			.main6 .p6 p{
+				font-size: 13px;
+			}
+			@media(max-width: 676px){
+			.main1 .p1 p{
+				font-size: 11px;
+			}
+			.main2 .p2 p{
+				font-size: 11px;
+			}
+			.main3 .p3 p{
+				font-size: 11px;
+			}
+			.main4 .p4 p{
+				font-size: 11px;
+			}
+			.main5 .p5 p{
+				font-size: 11px;
+				margin-top: -28px;
+			}
+			.main6 .p6 p{
+				font-size: 11px;
+			}
+			@media(max-width: 480px){
+			.main1 .p1 p{
+				font-size: 9px;
+			}
+			.main2 .p2 p{
+				font-size: 9px;
+			}
+			.main3 .p3 p{
+				font-size: 9px;
+			}
+			.main4 .p4 p{
+				font-size: 9px;
+			}
+			.main5 .p5 p{
+				font-size: 9px;
+				margin-top: -28px;
+			}
+			.main6 .p6 p{
+				font-size: 9px;
+			}
+			footer{
+				font-size: 10px;
+			}
+		}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<marquee><h1>Safety</h1></marquee>
+		<marquee direction="right"><h3>Safety is aviation's highest priority.</h3></marquee>
+	</header>
+	<div class="main1">
+		<div class="img1">
+			<img src="i1.jpg">
+		</div>
+		<div class="p1">
+			<h4>Safety Leadership</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem 
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>
+	<div class="main2">
+		<div class="img2">
+			<img src="i2.jpg">
+		</div>
+		<div class="p2">
+			<h4>Safety Risk</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem 
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>	
+	<div class="main3">
+		<div class="img3">
+			<img src="i3.jpg">
+		</div>
+		<div class="p3">
+			<h4>Areas of Activity</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem 
+			Lorem ipsum dolor sivt amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>	
+	<div class="main4">
+		<div class="img4">
+			<img src="i4.jpg">
+		</div>
+		<div class="p4">
+			<h4>Corporate Safety</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem 
+			Lorem ipsum dolor sivt amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>	
+	<div class="main5">
+		<div class="img5">
+			<img src="i5.jpg">
+		</div>
+		<div class="p5">
+			<h4>IATA Safety Audit Programs</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem 
+			Lorem ipsum dolor sivt amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>	
+	<div class="main6">
+		<div class="img6">
+			<img src="i6.jpg">
+		</div>
+		<div class="p6">
+			<h4>Safety Quality & Compliance</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem 
+			Lorem ipsum dolor sivt amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis repre.</p>
+		</div>
+	</div>	
+	<footer>
+		<div class="f1">
+			<p>Copyright©2010 <a href="">Domain Name </a>- All Rights Reserved</p>
+		</div>
+		<div class="f2">
+			<p><a href="">Free CSS Templates</a> by <a href="">TemplateMonster</a></p>
+		</div>
+	</footer>
+</body>
+</html>
