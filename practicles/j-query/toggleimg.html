@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>toggle img</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<style type="text/css">
+		#slider{
+			height: 230px;
+			width: 100%;
+			border: 1px solid black;
+			position: relative;
+		}
+		button{
+			top: 85%;
+			left: 45%;
+			position: absolute;
+		}
+		#slide{
+			height: 260px;
+			width: 100%;
+			border: 1px solid black;
+			margin-top: -10px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<img src="img1.jpg" id="slider">
+		<button>img toggle</button>
+		<img src="img2.jpg" id="slide">
+	</div>	
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#slide").slideToggle(1000)
+		});
+	});
+</script>
+</html>
