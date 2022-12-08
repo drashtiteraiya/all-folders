@@ -1,0 +1,47 @@
+.navbar-brand img{
+	transform: rotate(90deg);
+	height: 50px;
+	width: 50px;
+}
+section{
+	height: 100vh;
+	margin-top: 6%}
+#ab1{
+	height: 575px;
+	width: 50%;
+}
+section .pt-3{
+	font-size: 20px;
+}
+#ab2{
+	color: darkblue;
+	font-family: Helvetica;
+}
+#ab3{
+	height: 575px;
+	width: 50%;
+}
+#ab4{
+	font-size: 28px;
+	color: darkblue;
+}
+#ab5{
+	font-size: 18px;
+}
+.h6{
+	color: dodgerblue;
+}
+.img-1{
+	font-size: 15px;
+}
+#ab7{
+	color: darkblue;
+}
+@media (max-width: 992px){
+	#ab1{
+		width: 100%;
+	}
+	#ab3{
+		width: 100%;
+	}
+}
