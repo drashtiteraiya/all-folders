@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>COMPARISON OPERATORS</title>
+	<style type="text/css">
+		table,tr,th,td{
+			border: 1px solid black;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>operators</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>==</td>
+			<td>equal to</td>
+		</tr>
+		<tr>
+			<td>===</td>
+			<td>equal value and equal type</td>
+		</tr>
+		<tr>
+			<td>!=</td>
+			<td>not equal</td>
+		</tr>
+		<tr>
+			<td>!==</td>
+			<td>not equal value or not equal type</td>
+		</tr>
+		<tr>
+			<td>></td>
+			<td>greater than</td>
+		</tr>
+		<tr>
+			<td><</td>
+			<td>less than</td>
+		</tr>
+		<tr>
+			<td>>=</td>
+			<td>greater than or equal to</td>
+		</tr>
+		<tr>
+			<td><=</td>
+			<td>less than or equal to</td>
+		</tr>
+	</table>
+</body>
+<script type="text/javascript">
+	var a = 15;
+	var b = 25;
+
+	console.log(a==b);
+
+	var a = 25;
+	var b = 25;
+
+	console.log(a===b);
+
+	var a = 25;
+	var b = '25';	/*this will gonna count in string*/
+
+	console.log(a===b);
+
+	var a = 25;
+	var b = '25';
+
+	console.log(2 != 3);
+
+	console.log(3 != 3);
+
+	console.log(2 != '2');
+
+	console.log(2 !== '2');
+
+	console.log(20 > 20);
+
+	console.log(2 < 4);
+
+	console.log(2 >= 4);
+
+	console.log(2 <= 4);
+	
+	console.log(null === undefined);
+</script>
+</html>
